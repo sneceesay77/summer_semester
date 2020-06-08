@@ -10,7 +10,14 @@
 </head>
 <body>
 <div class="jumbotron text-center">
-  <?php echo "<h1>My First PHP Lab</h1>" ?>
+  <?php 
+    $age = 25;
+    if($age > 20){
+       echo "<h1>My First PHP Lab in $age years</h1>";  
+    }else{
+        echo "<h1>My First PHP Lab</h1>";
+    } 
+  ?>
 </div>
 
 <div class="container">
@@ -25,10 +32,22 @@
         ?>
     </div>
     <div class="col-sm-4">
-      
+    <?php 
+        echo 
+        "<ul>
+            <li>Kiwi</li>
+            <li>Avocado</li>
+        </ul>" 
+        ?>
     </div>
     <div class="col-sm-4">
-     
+        <?php 
+            echo 
+            "<ul>
+                <li>Pear</li>
+                <li>Strawberry</li>
+            </ul>" 
+        ?>
     </div>
   </div>
 </div>
